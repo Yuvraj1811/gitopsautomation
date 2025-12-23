@@ -23,7 +23,7 @@ func main() {
 	}
 
 	// 1️⃣ Read config.yaml
-	configPath := "../config/config.yaml"
+	configPath := "config.yaml"
 	data, err := os.ReadFile(configPath)
 	if err != nil {
 		log.Fatal(err)

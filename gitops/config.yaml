@@ -1,8 +1,8 @@
 services:
     auth:
-        image: v2
+        image: auth-service:v1
         path: k8s/auth/deployment.yaml
-        replicas: 3
+        replicas: 2
     order:
         image: order-service:v1
         path: k8s/order/deployment.yaml

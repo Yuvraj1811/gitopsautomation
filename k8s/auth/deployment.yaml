@@ -5,7 +5,7 @@ metadata:
     app: auth
   name: auth-deployment
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: auth
@@ -15,7 +15,7 @@ spec:
         app: auth
     spec:
       containers:
-        - image: v2
+        - image: auth-service:v1
           imagePullPolicy: IfNotPresent
           livenessProbe:
             httpGet:

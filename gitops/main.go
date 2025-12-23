@@ -64,14 +64,14 @@ func main() {
 	fmt.Println("✅ deployment.yaml updated")
 
 	// 4️⃣ Apply deployment to cluster
-	cmd := exec.Command("kubectl", "apply", "-f", deployPath)
-	cmd.Stdout = os.Stdout
-	cmd.Stderr = os.Stderr
-	err = cmd.Run()
-	if err != nil {
-		log.Fatal(err)
-	}
-	fmt.Println("✅ Kubernetes deployment applied")
+	// cmd := exec.Command("kubectl", "apply", "-f", deployPath)
+	// cmd.Stdout = os.Stdout
+	// cmd.Stderr = os.Stderr
+	// err = cmd.Run()
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
+	// fmt.Println("✅ Kubernetes deployment applied")
 
 	// 5️⃣ Git commit & push
 	exec.Command("git", "add", ".").Run()

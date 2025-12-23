@@ -6,4 +6,4 @@ services:
     order:
         image: order-service:v1
         path: k8s/order/deployment.yaml
-        replicas: 2
+        replicas: 3

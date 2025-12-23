@@ -15,7 +15,7 @@ spec:
         app: auth
     spec:
       containers:
-        - image: auth-service:v1
+        - image: v2
           imagePullPolicy: IfNotPresent
           livenessProbe:
             httpGet:
